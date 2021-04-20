@@ -10,7 +10,6 @@ export class HomePage {
   weight: number;
   bmi: number;
   bmiMessage: string; 
-  constructor(public navCtrl: NavController) {}
 
 calculateBMI() {
   this.bmi= this.weight / (this.height * this.height);
@@ -25,8 +24,9 @@ calculateBMI() {
   } else{
     this.bmiMessage = "Obese"; 
   }
+  constructor(public navCtrl: NavController) }
 
 }
-  }
+  
 
 
